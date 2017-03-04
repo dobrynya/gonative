@@ -1,0 +1,15 @@
+plugins {
+    id "org.echocat.golang" version "0.1.15"
+}
+
+group "github.com/dobrynya/gonative"
+
+golang {
+    platforms = "linux-amd64,windows-amd64"
+
+    dependencies {
+//        build 'github.com/urfave/cli'
+//        test 'github.com/stretchr/testify'
+    }
+}
+

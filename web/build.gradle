@@ -1,0 +1,13 @@
+apply plugin: "scala"
+apply plugin: "jetty"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.scala-lang:scala-library:2.12+"
+    providedCompile "javax.servlet:javax.servlet-api:3.1.0"
+}
+
+jettyRun.dependsOn(project(":native").build)
